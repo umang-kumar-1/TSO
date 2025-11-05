@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "tso",
+    "libraryId": "f8439549-0cb2-4bce-b6af-30ee655a52d7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "TSO",
+    "solutionShortDescription": "TSO description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

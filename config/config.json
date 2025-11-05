@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "tso-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tso/TsoWebPart.js",
+          "manifest": "./src/webparts/tso/TsoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TsoWebPartStrings": "lib/webparts/tso/loc/{locale}.js"
+  }
+}
