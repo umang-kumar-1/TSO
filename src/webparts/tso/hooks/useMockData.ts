@@ -76,7 +76,7 @@ export const useMockData = () => {
           "Id,name,courseId/Id,courseId/Title,staffId/Id,staffId/Title,weekdays,time,startDate,status"
         )
         .expand("courseId,staffId")
-        .get();
+        .getAll();
 
       const mappedBatches = res.map((item: any) => ({
         id: item.Id.toString(),
@@ -290,7 +290,7 @@ export const useMockData = () => {
           "Id,Title,Description,Category,Amount,Date,Comments,Attachments"
         )
         .expand("AttachmentFiles") // ensures attachment files are fetched
-        .get();
+        .getAll();
 
       const mappedExpenses = res.map( (item: any) => {
           const attachments =
@@ -442,7 +442,7 @@ export const useMockData = () => {
           "Id,Title,Course/Id,Course/Title,Student/Id,Student/Title,Trainer/Id,Trainer/Title,DueDate,Status,Attachments"
         )
         .expand("Course,Student,Trainer")
-        .get();
+        .getAll();
 
       const mappedData = await Promise.all(
         items.map(async (item: any) => {
@@ -541,7 +541,7 @@ export const useMockData = () => {
           "Id,Title,Student/ID,Student/Title,Amount,Date,Status,PaymentMethod,comments"
         )
         .expand("Student")
-        .get();
+        .getAll();
 
       const mapped = items.map((item: any) => ({
         id: item.Id.toString(),
